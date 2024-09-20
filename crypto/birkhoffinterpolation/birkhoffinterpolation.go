@@ -59,7 +59,7 @@ func (p *BkParameter) GetRank() uint32 {
 }
 
 func (p *BkParameter) String() string {
-	return fmt.Sprintf("(x, rank) = (%s, %d)", p.x, p.rank)
+	return fmt.Sprintf("(x, rank) = (%078s, %d)", p.x, p.rank)
 }
 
 func (p *BkParameter) GetLinearEquationCoefficient(fieldOrder *big.Int, degreePoly uint32) []*big.Int {
